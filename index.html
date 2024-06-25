@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<!-- META -->
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Olá, meu nome é Guilherme Prado, sou desenvolvedor Web. Venha conhecer meu trabalho!">
+    
+<!-- CSS -->
+<link rel="stylesheet" href="assets/style/reset.css" />
+<link rel="stylesheet" href="assets/style/style.css" />
+<link rel="stylesheet" href="assets/style/responsive.css"/>
+
+<!-- ICONE -->
+<link rel="icon" href="assets/images/icon.ico" type="image/x-icon">
+
+<!-- JAVASCRIPT -->
+<script src="assets/script/script.js" defer></script>
+    
+<!-- TITULO -->
+<title> Guilherme Prado - Portifólio </title>
+
+</head>
+
+<!--*---------------------------------------------------------------------------------------------->
+
+<body>
+
+<!--*---------- CABEÇALHO => NAVEGAÇÃO ------------->
+
+<!-- BARRA DE NAVEGAÇÃO: DESKTOP -->
+  <nav id="desktop-nav">
+    <div class="logo"> Prado </div>
+
+    <ul class="nav-links">
+      <li> <a href="#about"> Sobre </a> </li>
+
+      <li> <a href="#experience"> Experiência </a> </li>
+
+      <li> <a href="#projects"> Projetos </a> </li>
+
+      <li> <a href="#contact"> Contato </a> </li>  
+    </ul>
+  </nav>
+
+<!-- BARRA DE NAVEGAÇÃO: MOBILE -->
+  <nav id="hamburger-nav">
+    <div class="logo"> Prado </div>
+    
+    <!-- ICONE HAMBURGUER MENU -->
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="menu-links">
+      <li> <a href="#about" onclick="toggleMenu()"> Sobre </a> </li>
+      
+      <li> <a href="#experience" onclick="toggleMenu()"> Experiência </a> </li>
+  
+      <li> <a href="#projects" onclick="toggleMenu()"> Projetos </a> </li>
+  
+      <li> <a href="#contact" onclick="toggleMenu()"> Contato </a> </li>    
+    </ul>
+  </nav>
+
+<!--*---------- SEÇÃO => PROFILE BANNER ------------->
+
+  <section id="profile">
+
+    <!-- FOTO -->
+    <div class="section__pic-container">
+      <img src="./assets/images/profile-pic.png"/>
+    </div>
+
+    <!-- TEXTOS -->
+    <div class="section__text">
+      <p class="section__text__p1"> Olá, meu nome é </p>
+
+      <h1 class="title-banner"> Guilherme Prado </h1>
+
+      <p class="section__text__p2"> Desenvolvedor Front-End </p>
+
+      <!-- BOTÕES => PRINCIPAIS -->
+      <div class="btn-container">
+        <a href="./assets/pdf/curriculo-guilherme.pdf" target="_blank">
+          <button class="btn btn-color-2" > 
+              CurrÍculo
+          </button>
+        </a>
+
+        <a href="https://wa.me/5512982684249" target="_blank">
+          <button class="btn btn-color-1">
+            Entre em Contato 
+          </button>
+        </a>
+      </div>
+
+      <!-- BOTÕES => REDES SOCIAIS -->
+      <div id="socials-container">
+        <a href="https://www.linkedin.com/in/guilherme-moreira-857714259/" target="_blank">
+          <img class="icon" src="./assets/images/linkedin.png"/>
+        </a>
+
+        <a href="https://github.com/userprado" target="_blank">
+          <img class="icon" src="./assets/images/github.png"/>
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!--*---------- SEÇÃO => SOBRE MIM ------------->
+
+  <section id="about">
+    <p class="section__text__p1"> Saiba Mais </p>
+    <h1 class="title"> Sobre Mim </h1>
+
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/images/experience.png" class="icon"/>
+              
+            <h3> Experiencia </h3>
+              
+            <p> +1 ano <br /> Desenvolvimento Front-End </p>
+          </div>
+
+          <div class="details-container">
+            <img src="./assets/images/education.png" class="icon"/>
+
+            <h3> Educação </h3>
+
+            <p> Técnologo de Gestão de TI - Fatec </p>
+            
+            <p> Curso de Programação FullStack - Alura </p>
+          </div>
+        </div>
+
+        <div class="text-container">
+          <p>
+            Olá, meu nome é Guilherme Moreira Marques Prado, tenho 20 anos de idade, sou nascido e criado em São Sebastião - SP, possuo técnico em adminstração com foco em gestão e negócios na Etec de São Sebastião, e atualmente estou cursando o curso técnologo de Gestão de TI na Fatec de São Sebastião. Sou uma pessoa muito extrovertida e comunicativa, umas das minhas paixões é a técnologia desde de criança, e hoje ter a experiência de trabalhar e estudar a técnologia mais afundo é uma realização tanto pessoal quanto profissional, procuro me dedicar 100% a tudo que faço, e com a programação não é diferente, mesmo com as dificuldades encontradas nesse longo caminho, me sinto de cabeça erguida sempre buscando aprender mais e trabalhar mais, para assim construir uma carreira de respeito e ser lembrado pelo meu trabalho.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <img 
+      src="./assets/images/arrow.png" 
+      class="icon arrow" 
+      onclick="location.href='./#experience'"
+    />  
+  </section>
+
+<!--*---------- SEÇÃO => EXPERIÊNCIA ------------->
+
+  <section id="experience">
+    <p class="section__text__p1"> Descubra Minha </p>
+    <h1 class="title"> Experiência </h1>
+    
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title"> Desenvolvimento Web Front-End </h2>
+
+          <div class="article-container">
+
+            <!-- HTML -->
+            <article>
+              <img src="./assets/images/checkmark.png" class="icon"/>
+
+              <div>
+                <h3> HTML </h3>
+                <p> Experiente </p>
+              </div>
+            </article>
+
+            <!-- CSS -->
+            <article>
+              <img src="./assets/images/checkmark.png" class="icon"/>
+                
+              <div>
+                <h3> CSS </h3>
+                <p> Experiente </p>
+              </div>
+            </article>
+
+            <!-- SASS -->
+            <article>
+              <img src="./assets/images/checkmark.png" class="icon"/>
+              
+              <div>
+                <h3> SASS </h3>
+                <p> Intermediário </p>
+              </div>
+            </article>
+
+            <!-- JAVASCRIPT -->
+            <article>
+              <img src="./assets/images/checkmark.png" class="icon"/>
+                
+              <div>
+                <h3> JavaScript </h3>
+                <p> Básico </p>
+              </div>
+            </article>
+
+            <!-- TYPESCRIPT -->
+            <article>
+              <img src="./assets/images/checkmark.png" class="icon"/>
+
+              <div>
+                <h3> TypeScript </h3>
+                <p> Básico </p>
+              </div>
+            </article>
+
+            <!-- NODE JS -->
+            <article>
+              <img src="./assets/images/checkmark.png" class="icon"/>
+                
+              <div>
+                <h3> Node JS </h3>
+                <p> Intermediário </p>
+              </div>
+            </article>
+
+            <!-- GIT -->
+            <article>
+              <img src="./assets/images/checkmark.png" class="icon"/>
+                
+              <div>
+                <h3> Git </h3>
+                <p> Intermediário </p>
+              </div>
+            </article>
+
+            <!-- BOOTSTRAP -->
+            <article>
+              <img src="./assets/images/checkmark.png" class="icon"/>
+                
+              <div>
+                <h3> Bootstrap </h3>
+                <p> Intermediário </p>
+              </div>
+            </article>
+
+            <!-- REACT -->
+            <article>
+              <img src="./assets/images/checkmark.png" class="icon"/>
+                
+              <div>
+                <h3> Framework React </h3>
+                <p> Básico </p>
+              </div>
+            </article>
+
+            <!-- TAILWIND -->
+            <article>
+              <img src="./assets/images/checkmark.png" class="icon"/>
+              <div>
+                <h3> Tailwind </h3>
+                <p> Intermediário </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img
+      src="./assets/images/arrow.png"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+    />
+    
+  </section>
+
+<!--*---------- SEÇÃO => PROJETOS ------------->
+
+  <section id="projects">
+    <p class="section__text__p1"> Conheça meus Projetos </p>
+    <h1 class="title"> Projetos </h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          <!-- PROJETO 1 -->
+          <div class="details-container color-container">
+            <div class="article-container">   
+              <img src="./assets/images/formulario-banner.png" class="project-img"/>
+            </div>
+
+            <h2 class="experience-sub-title project-title"> Formulário </h2>
+
+            <div class="btn-container">
+              <a href="github.com" target="_blank">
+                <button class="btn project-btn">
+                  Código
+                </button>
+              </a>
+
+              <a href="./projects/formulario/index.html" target="_blank">
+                <button class="btn project-btn">
+                  Ver Projeto
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!-- PROJETO 2 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/images/calculadora-banner.jpg" class="project-img"/>
+            </div>
+
+            <h2 class="experience-sub-title project-title"> Calculadora </h2>
+
+            <div class="btn-container">
+              <a href="https://github.com/" target="_blank">
+                <button class="btn project-btn">
+                  Código
+                </button>
+              </a>
+
+              <a href="./projects/calculadora/calculadora.html" target="_blank">
+                <button class="btn btn-color-2 project-btn">
+                  Ver Projeto
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!-- PROJETO 3 -->
+          <div class="details-container color-container"> 
+            <div class="article-container">
+              <img src="./assets/images/to-do-banner.png" class="project-img"/>
+            </div>
+          
+            <h2 class="experience-sub-title project-title"> To Do List </h2>
+          
+            <div class="btn-container">
+              <a href="https://github.com/" target="_blank">
+                <button class="btn btn-color-2 project-btn">
+                  Código
+                </button>
+              </a>
+
+              <a href="./projects/to-do-list/index.html" target="_blank">
+                <button class="btn btn-color-2 project-btn">
+                  Ver Projeto
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <img
+      src="./assets/images/arrow.png"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+  </section>
+
+<!--*---------- SEÇÃO => CONTATO ------------->
+  <section id="contact">
+    <p class="section__text__p1"> Vamos Conversar? </p>
+    <h1 class="title"> Entre em Contato </h1>
+
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/images/whatsapp.png" class="icon contact-icon"/>
+        <p> 
+          <a href="https://wa.me/5512982684249" target="_blank"> WhatsApp </a> 
+        </p>
+      </div>
+
+      <div class="contact-info-container">
+        <img src="./assets/images/linkedin.png" class="icon contact-icon"/>
+        <p>
+          <a href="https://www.linkedin.com" target="_blank"> LinkedIn </a> 
+        </p>
+      </div>
+    </div>
+  </section>
+
+<!--*---------- SEÇÃO => CONTATO ------------->
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li> <a href="#desktop-nav"> Home </a> </li>
+
+          <li> <a href="#about"> Sobre </a> </li>
+
+          <li> <a href="#experience"> Experiência </a> </li>
+
+          <li> <a href="#projects"> Projetos </a> </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <p> Copyright &#169; 2024 Guilherme Prado. Todos os direitos reservados. </p>
+  </footer>
+</body>
+</html>
